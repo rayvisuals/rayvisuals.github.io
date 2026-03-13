@@ -17,10 +17,6 @@
 --lavender:#E0D8F9;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 font-family:'Inter',sans-serif;
 margin:0;
@@ -33,14 +29,14 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 10%;
-background:white;
 border-bottom:1px solid #eee;
+background:white;
 position:sticky;
 top:0;
 }
 
 nav img{
-height:40px;
+height:42px;
 }
 
 nav a{
@@ -50,45 +46,29 @@ color:var(--navy);
 font-weight:600;
 }
 
-nav a:hover{
-color:var(--red);
-}
-
 .hero{
-text-align:center;
-padding:180px 20px;
 background:var(--lavender);
+text-align:center;
+padding:160px 20px;
 }
 
 .hero img{
-width:140px;
-margin-bottom:25px;
+width:120px;
+margin-bottom:20px;
 }
 
 .hero h1{
-font-size:70px;
+font-size:60px;
 color:var(--navy);
 margin-bottom:10px;
 }
 
 .hero p{
 font-size:22px;
-color:#555;
-}
-
-.button{
-display:inline-block;
-margin-top:30px;
-padding:14px 30px;
-background:var(--red);
-color:white;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
 }
 
 .section{
-padding:110px 10%;
+padding:100px 10%;
 max-width:1100px;
 margin:auto;
 text-align:center;
@@ -96,39 +76,62 @@ text-align:center;
 
 .section h2{
 color:var(--navy);
-font-size:36px;
-margin-bottom:20px;
+margin-bottom:30px;
 }
 
-.projects{
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:40px;
+}
+
+.stat h3{
+font-size:40px;
+color:var(--red);
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:40px;
-margin-top:60px;
+margin-top:40px;
 }
 
-.project-card{
+.card{
 background:white;
-padding:40px;
-border-radius:16px;
+padding:30px;
+border-radius:14px;
 border:2px solid var(--lavender);
-transition:0.3s;
 }
 
-.project-card:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,0.08);
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:30px;
 }
 
-.project-card h3{
-color:var(--navy);
+.skill{
+background:var(--lavender);
+padding:10px 20px;
+border-radius:20px;
+}
+
+.button{
+background:var(--red);
+color:white;
+padding:12px 26px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
 }
 
 footer{
-margin-top:120px;
 padding:40px;
 text-align:center;
-color:#666;
 border-top:1px solid #eee;
 }
 
@@ -144,7 +147,8 @@ border-top:1px solid #eee;
 
 <div>
 <a href="#about">About</a>
-<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
 </div>
 
@@ -154,11 +158,9 @@ border-top:1px solid #eee;
 
 <img src="rayvisuals-logo.png">
 
-<h1>Ray Visuals</h1>
+<h1>Rayvaithi Alagappan</h1>
 
-<p>Engineering • Robotics • Creative Design</p>
-
-<a class="button" href="#projects">View Projects</a>
+<p>Media Creator • STEM Educator • EdTech Builder</p>
 
 </div>
 
@@ -167,32 +169,74 @@ border-top:1px solid #eee;
 <h2>About</h2>
 
 <p>
-Ray Visuals explores engineering creativity, robotics innovation,
-and visual storytelling through projects and design experiments.
+Broadcast media professional turned STEM educator.
+Trainer for AI, coding and robotics programmes and co-founder
+of the Answered.sg EdTech platform.
 </p>
+
+<div class="stats">
+
+<div class="stat">
+<h3>7+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h3>20+</h3>
+<p>Schools</p>
+</div>
+
+<div class="stat">
+<h3>500+</h3>
+<p>Students Trained</p>
+</div>
+
+</div>
 
 </section>
 
-<section id="projects" class="section">
+<section id="experience" class="section">
 
-<h2>Selected Projects</h2>
+<h2>Experience</h2>
 
-<div class="projects">
+<div class="grid">
 
-<div class="project-card">
-<h3>Robotics Design</h3>
-<p>Designing and building innovative robotics mechanisms.</p>
+<div class="card">
+<h3>AI Trainer</h3>
+<p>AI For Fun / Code For Fun (IMDA & MOE)</p>
 </div>
 
-<div class="project-card">
-<h3>Engineering Notebook</h3>
-<p>Documenting ideas, prototypes, and engineering iterations.</p>
+<div class="card">
+<h3>Robotics Trainer</h3>
+<p>Playfacto Coding & Robotics</p>
 </div>
 
-<div class="project-card">
-<h3>Creative Visual Projects</h3>
-<p>Exploring visual storytelling through digital design.</p>
+<div class="card">
+<h3>Co-Founder</h3>
+<p>Answered.sg EdTech Platform</p>
 </div>
+
+<div class="card">
+<h3>Motion Graphics Producer</h3>
+<p>Enterprise Singapore, DBS, SCB</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills" class="section">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">After Effects</div>
+<div class="skill">Premiere Pro</div>
+<div class="skill">Illustrator</div>
+<div class="skill">Photoshop</div>
+<div class="skill">Coding Education</div>
+<div class="skill">Robotics</div>
 
 </div>
 
@@ -202,13 +246,15 @@ and visual storytelling through projects and design experiments.
 
 <h2>Contact</h2>
 
-<p>Email: your@email.com</p>
+<p>Email: contact@rayvisuals.co</p>
+
+<a class="button" href="https://linkedin.com/in/rayvaithi">LinkedIn</a>
 
 </section>
 
 <footer>
 
-© 2026 Ray Visuals
+© Ray Visuals
 
 </footer>
 
