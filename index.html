@@ -1,106 +1,180 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Ray Portfolio</title>
+
+<title>Ray Visuals</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5f5f5;
-color:#333;
-}
 
-header{
-background:#111;
-color:white;
-text-align:center;
-padding:60px 20px;
+body{
+font-family:'Inter',sans-serif;
+margin:0;
+color:#1d1d1f;
+background:white;
 }
 
 nav{
-background:#333;
-text-align:center;
-padding:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+border-bottom:1px solid #eee;
+}
+
+nav img{
+height:38px;
 }
 
 nav a{
-color:white;
-margin:0 15px;
+margin-left:25px;
 text-decoration:none;
-font-weight:bold;
+color:#333;
+font-weight:500;
 }
 
-section{
-max-width:900px;
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero img{
+width:120px;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:56px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#6e6e73;
+}
+
+.section{
+padding:100px 10%;
+max-width:1100px;
 margin:auto;
-padding:50px 20px;
+text-align:center;
 }
 
-.project{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:8px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+.project-card{
+background:#fafafa;
+padding:40px;
+border-radius:18px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.project-card h3{
+margin-top:0;
 }
 
 footer{
+margin-top:100px;
+padding:40px;
 text-align:center;
-padding:30px;
-background:#111;
-color:white;
+color:#86868b;
+font-size:14px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Ray</h1>
-<p>Engineer • Educator • Creator</p>
-</header>
-
 <nav>
+
+<img src="rayvisuals-logo.png">
+
+<div>
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
+</div>
+
 </nav>
 
-<section id="about">
-<h2>About Me</h2>
-<p>I am passionate about engineering education, robotics, and creative problem solving.</p>
+<div class="hero">
+
+<img src="rayvisuals-logo.png">
+
+<h1>Ray Visuals</h1>
+
+<p>Engineering • Robotics • Creative Design</p>
+
+</div>
+
+<section id="about" class="section">
+
+<h2>About</h2>
+
+<p>
+I create projects focused on engineering education, robotics innovation,
+and creative problem solving. This portfolio highlights my work,
+ideas, and teaching projects.
+</p>
+
 </section>
 
-<section id="projects">
-<h2>Projects</h2>
+<section id="projects" class="section">
 
-<div class="project">
+<h2>Selected Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
 <h3>Robotics Design</h3>
-<p>Student robotics and VEX IQ design projects.</p>
+<p>Building innovative robotics systems and exploring mechanical design.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>Engineering Notebook</h3>
-<p>Teaching students how to document ideas and designs.</p>
+<p>Documenting ideas, prototypes, and design iterations.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>STEM Teaching</h3>
-<p>Hands-on engineering lessons and innovation activities.</p>
+<p>Hands-on engineering activities for creative learning.</p>
+</div>
+
 </div>
 
 </section>
 
-<section id="contact">
+<section id="contact" class="section">
+
 <h2>Contact</h2>
+
 <p>Email: your@email.com</p>
+
 </section>
 
 <footer>
-<p>© 2026 Ray Portfolio</p>
+
+© 2026 Ray Visuals
+
 </footer>
 
 </body>
+
 </html>
